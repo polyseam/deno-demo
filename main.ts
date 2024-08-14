@@ -5,6 +5,7 @@ Deno.serve((req: Request): Response => {
   const message = "hello";
 
   const body: string = JSON.stringify({
+    version: 2,
     message: `${message} ${whoToGreet}`,
     metadata: {
       url,
